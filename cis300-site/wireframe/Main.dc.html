@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Work+Sans:wght@400;500;600&display=swap">
+  <style>
+    body{margin:0;background:#faf9f7;color:#33322e;font-family:'Work Sans',system-ui,sans-serif}
+    a{color:#a35d09;text-decoration:none}a:hover{color:#7d4506}
+    .hd{display:flex;justify-content:space-between;align-items:center;padding:18px 34px;border-bottom:1.5px solid #d9d7d1;background:#fff}
+    .wm{font-weight:600;font-size:19px;letter-spacing:-.02em}
+    .nav{display:flex;gap:20px;font-size:13px;color:#6b6862}
+    .on{color:#33322e;font-weight:600;border-bottom:2px solid #a35d09;padding-bottom:2px}
+    .mn{padding:30px 34px;display:flex;flex-direction:column;gap:26px}
+    .sec{border:1.5px solid #d9d7d1;background:#fff;border-radius:3px;padding:22px}
+    .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#94908a;margin:0 0 12px;font-weight:600}
+    .bar{height:9px;border-radius:2px;background:#e8e6e1}
+    .bars{display:flex;flex-direction:column;gap:8px}
+    .tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#a35d09;background:#fdf6ea;border:1px dashed #e0b177;border-radius:3px;padding:3px 8px}
+    .note{font-family:'Caveat',cursive;font-size:18px;color:#a35d09;line-height:1.2}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border:1.5px solid #33322e;border-radius:3px;font-size:14px;font-weight:600;background:#33322e;color:#fff}
+    .btn2{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border:1.5px solid #b9b6ae;border-radius:3px;font-size:14px;font-weight:500;color:#4a4842}
+    .ft{border-top:1.5px solid #d9d7d1;padding:22px 34px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;font-size:12px;color:#6b6862;background:#fff}
+    .imgph{border:1.5px dashed #c9c6be;border-radius:3px;background:#f2f0ec;display:flex;align-items:center;justify-content:center;color:#94908a;font-size:12px;text-align:center}
+  </style>
+</helmet>
+
+<div style="display:flex;flex-direction:column;min-height:100%">
+
+  <header class="hd">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:26px;height:26px;border:1.5px solid #33322e;border-radius:3px"></div>
+      <div class="wm">Bench Notes</div>
+      <span class="tag" style="margin-left:6px">header</span>
+    </div>
+    <nav class="nav">
+      <span class="on">Home</span>
+      <span>How It Decides</span>
+      <span>FAQ</span>
+      <span>About</span>
+      <span>Contact</span>
+      <span class="tag">nav</span>
+    </nav>
+  </header>
+
+  <main class="mn" style="flex-grow:1">
+
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px">
+      <span class="tag">main</span>
+      <span class="note">Page title + meta description on every page</span>
+    </div>
+
+    <section class="sec" style="padding:34px">
+      <p class="lbl">Hero — one sentence, one action</p>
+      <h1 style="font-size:38px;font-weight:600;line-height:1.1;margin:0 0 14px;letter-spacing:-.025em;max-width:19ch">Know who to start. And why.</h1>
+      <p style="font-size:16px;line-height:1.5;color:#5c5952;margin:0 0 22px;max-width:52ch">Bench Notes scores your lineup against your league's actual scoring settings, then explains the call in plain English.</p>
+      <div style="display:flex;gap:12px;align-items:center">
+        <span class="btn">See how it decides</span>
+        <span class="btn2">Open the tool</span>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <p class="lbl" style="margin:0">Demo clip</p>
+        <span class="tag">&lt;video&gt; — 15s, self-recorded</span>
+      </div>
+      <div class="imgph" style="height:250px">
+        <div>
+          <div style="width:0;height:0;border-left:22px solid #b9b6ae;border-top:14px solid transparent;border-bottom:14px solid transparent;margin:0 auto 10px"></div>
+          One start/sit call, start to finish
+        </div>
+      </div>
+      <p style="font-size:12px;color:#94908a;margin:10px 0 0">Caption line beneath the clip</p>
+    </section>
+
+    <section>
+      <p class="lbl">Three doubts the visitor arrives with</p>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px">
+        <div class="sec">
+          <h2 style="font-size:15px;font-weight:600;margin:0 0 10px">Set your lineup fast</h2>
+          <div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar" style="width:70%"></div></div>
+        </div>
+        <div class="sec">
+          <h2 style="font-size:15px;font-weight:600;margin:0 0 10px">See the reasoning</h2>
+          <div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar" style="width:55%"></div></div>
+        </div>
+        <div class="sec">
+          <h2 style="font-size:15px;font-weight:600;margin:0 0 10px">Uses your league's rules</h2>
+          <div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar" style="width:80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" style="display:flex;gap:24px;align-items:center">
+      <div class="imgph" style="width:280px;height:170px;flex-shrink:0">Annotated screenshot</div>
+      <div style="flex-grow:1">
+        <h2 style="font-size:17px;font-weight:600;margin:0 0 10px">What it actually looks at</h2>
+        <div class="bars" style="margin-bottom:16px"><div class="bar"></div><div class="bar"></div><div class="bar" style="width:65%"></div></div>
+        <span style="font-size:13px;font-weight:600;color:#a35d09">Read the full method &rarr;</span>
+      </div>
+    </section>
+
+    <section class="sec" style="text-align:center;padding:30px">
+      <h2 style="font-size:20px;font-weight:600;margin:0 0 8px">Repeat the one action</h2>
+      <p style="font-size:13px;color:#94908a;margin:0 0 18px">Same primary button as the hero — never a competing second ask</p>
+      <span class="btn">See how it decides</span>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <span>Fantasy data provided by Yahoo Fantasy</span>
+      <div style="display:flex;gap:8px"><span class="tag">external link</span><span class="note" style="font-size:15px">also satisfies Yahoo's attribution rule</span></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;text-align:right">
+      <span>patrick@[DOMAIN]</span>
+      <div style="display:flex;gap:8px;justify-content:flex-end"><span class="tag">email link</span><span class="tag">footer</span></div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

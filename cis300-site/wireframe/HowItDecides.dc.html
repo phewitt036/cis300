@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Work+Sans:wght@400;500;600&display=swap">
+  <style>
+    body{margin:0;background:#faf9f7;color:#33322e;font-family:'Work Sans',system-ui,sans-serif}
+    a{color:#a35d09;text-decoration:none}a:hover{color:#7d4506}
+    .hd{display:flex;justify-content:space-between;align-items:center;padding:18px 34px;border-bottom:1.5px solid #d9d7d1;background:#fff}
+    .wm{font-weight:600;font-size:19px;letter-spacing:-.02em}
+    .nav{display:flex;gap:20px;font-size:13px;color:#6b6862}
+    .on{color:#33322e;font-weight:600;border-bottom:2px solid #a35d09;padding-bottom:2px}
+    .mn{padding:30px 34px;display:flex;flex-direction:column;gap:26px}
+    .sec{border:1.5px solid #d9d7d1;background:#fff;border-radius:3px;padding:22px}
+    .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#94908a;margin:0 0 12px;font-weight:600}
+    .bar{height:9px;border-radius:2px;background:#e8e6e1}
+    .bars{display:flex;flex-direction:column;gap:8px}
+    .tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#a35d09;background:#fdf6ea;border:1px dashed #e0b177;border-radius:3px;padding:3px 8px}
+    .note{font-family:'Caveat',cursive;font-size:18px;color:#a35d09;line-height:1.2}
+    .ft{border-top:1.5px solid #d9d7d1;padding:22px 34px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;font-size:12px;color:#6b6862;background:#fff}
+    .imgph{border:1.5px dashed #c9c6be;border-radius:3px;background:#f2f0ec;display:flex;align-items:center;justify-content:center;color:#94908a;font-size:12px;text-align:center}
+    table{border-collapse:collapse;width:100%;font-size:13px}
+    th,td{border:1.5px solid #d9d7d1;padding:11px 13px;text-align:left;vertical-align:top}
+    th{background:#f2f0ec;font-weight:600;font-size:12px;letter-spacing:.02em}
+    td{color:#5c5952;line-height:1.45}
+  </style>
+</helmet>
+
+<div style="display:flex;flex-direction:column;min-height:100%">
+
+  <header class="hd">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:26px;height:26px;border:1.5px solid #33322e;border-radius:3px"></div>
+      <div class="wm">Bench Notes</div>
+    </div>
+    <nav class="nav">
+      <span>Home</span>
+      <span class="on">How It Decides</span>
+      <span>FAQ</span>
+      <span>About</span>
+      <span>Contact</span>
+    </nav>
+  </header>
+
+  <main class="mn" style="flex-grow:1">
+
+    <div>
+      <h1 style="font-size:30px;font-weight:600;margin:0 0 10px;letter-spacing:-.02em">How it decides</h1>
+      <p style="font-size:15px;line-height:1.5;color:#5c5952;margin:0;max-width:60ch">Intro paragraph: one honest sentence about what the tool does and does not know.</p>
+    </div>
+
+    <section class="sec">
+      <p class="lbl">The three steps, as boxes</p>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch">
+        <div style="border:1.5px solid #d9d7d1;border-radius:3px;padding:16px;background:#faf9f7">
+          <div style="font-size:11px;font-weight:600;color:#a35d09;margin-bottom:8px">STEP 1</div>
+          <div style="font-size:14px;font-weight:600;margin-bottom:8px">Read your league</div>
+          <div class="bars"><div class="bar"></div><div class="bar" style="width:60%"></div></div>
+        </div>
+        <div style="border:1.5px solid #d9d7d1;border-radius:3px;padding:16px;background:#faf9f7">
+          <div style="font-size:11px;font-weight:600;color:#a35d09;margin-bottom:8px">STEP 2</div>
+          <div style="font-size:14px;font-weight:600;margin-bottom:8px">Score each player</div>
+          <div class="bars"><div class="bar"></div><div class="bar" style="width:75%"></div></div>
+        </div>
+        <div style="border:1.5px solid #d9d7d1;border-radius:3px;padding:16px;background:#faf9f7">
+          <div style="font-size:11px;font-weight:600;color:#a35d09;margin-bottom:8px">STEP 3</div>
+          <div style="font-size:14px;font-weight:600;margin-bottom:8px">Rank your slots</div>
+          <div class="bars"><div class="bar"></div><div class="bar" style="width:50%"></div></div>
+        </div>
+      </div>
+      <p style="font-size:12px;color:#94908a;margin:14px 0 0">Drawn as a simple SVG diagram, not a photo</p>
+    </section>
+
+    <section class="sec">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+        <p class="lbl" style="margin:0">Gut feel vs. the tool</p>
+        <span class="tag">table — 3 columns, header row + 4 data rows</span>
+      </div>
+      <table>
+        <tr>
+          <th style="width:20%">Factor</th>
+          <th style="width:40%">How most people decide</th>
+          <th style="width:40%">What Bench Notes weighs</th>
+        </tr>
+        <tr>
+          <td>Matchup</td>
+          <td>Which defense sounds bad this week</td>
+          <td>Points actually allowed to that position, recent weeks</td>
+        </tr>
+        <tr>
+          <td>Volume</td>
+          <td>Whoever scored last week</td>
+          <td>Targets and carries per game, not just fantasy points</td>
+        </tr>
+        <tr>
+          <td>Scoring rules</td>
+          <td>Generic rankings from a big site</td>
+          <td>Your league's PPR value and your actual roster slots</td>
+        </tr>
+        <tr>
+          <td>Availability</td>
+          <td>Whatever the group chat said</td>
+          <td>Practice participation and official game status</td>
+        </tr>
+      </table>
+      <p style="font-size:12px;color:#94908a;margin:12px 0 0">Copy in these cells is a first draft — worth checking it against what the scorer really does</p>
+    </section>
+
+    <section class="sec" style="display:flex;gap:24px;align-items:flex-start">
+      <div class="imgph" style="width:300px;height:190px;flex-shrink:0">Annotated screenshot<br>of one recommendation</div>
+      <div style="flex-grow:1">
+        <h2 style="font-size:17px;font-weight:600;margin:0 0 10px">What it does not know</h2>
+        <div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar" style="width:45%"></div></div>
+        <p style="font-size:12px;color:#94908a;margin:12px 0 0">The honesty section — this is what earns Poya's trust</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div>Fantasy data provided by Yahoo Fantasy</div>
+    <div style="text-align:right">patrick@[DOMAIN]</div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

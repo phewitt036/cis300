@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Work+Sans:wght@400;500;600&display=swap">
+  <style>
+    body{margin:0;background:#faf9f7;color:#33322e;font-family:'Work Sans',system-ui,sans-serif}
+    a{color:#a35d09;text-decoration:none}a:hover{color:#7d4506}
+    .hd{display:flex;justify-content:space-between;align-items:center;padding:18px 34px;border-bottom:1.5px solid #d9d7d1;background:#fff}
+    .wm{font-weight:600;font-size:19px;letter-spacing:-.02em}
+    .nav{display:flex;gap:20px;font-size:13px;color:#6b6862}
+    .on{color:#33322e;font-weight:600;border-bottom:2px solid #a35d09;padding-bottom:2px}
+    .mn{padding:30px 34px;display:flex;flex-direction:column;gap:22px}
+    .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#94908a;margin:0 0 12px;font-weight:600}
+    .bar{height:9px;border-radius:2px;background:#e8e6e1}
+    .bars{display:flex;flex-direction:column;gap:8px}
+    .note{font-family:'Caveat',cursive;font-size:18px;color:#a35d09;line-height:1.2}
+    .ft{border-top:1.5px solid #d9d7d1;padding:22px 34px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;font-size:12px;color:#6b6862;background:#fff}
+    .qa{border:1.5px solid #d9d7d1;background:#fff;border-radius:3px;padding:18px 20px}
+    .q{font-size:15px;font-weight:600;margin:0 0 12px}
+  </style>
+</helmet>
+
+<div style="display:flex;flex-direction:column;min-height:100%">
+
+  <header class="hd">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:26px;height:26px;border:1.5px solid #33322e;border-radius:3px"></div>
+      <div class="wm">Bench Notes</div>
+    </div>
+    <nav class="nav">
+      <span>Home</span>
+      <span>How It Decides</span>
+      <span class="on">FAQ</span>
+      <span>About</span>
+      <span>Contact</span>
+    </nav>
+  </header>
+
+  <main class="mn" style="flex-grow:1">
+
+    <div>
+      <h1 style="font-size:30px;font-weight:600;margin:0 0 10px;letter-spacing:-.02em">Questions people actually ask</h1>
+      <p style="font-size:15px;line-height:1.5;color:#5c5952;margin:0;max-width:60ch">Six questions, answered straight. The trust questions come first, not last.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
+      <div class="qa">
+        <p class="q">Where does the data come from?</p>
+        <div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar" style="width:60%"></div></div>
+      </div>
+      <div class="qa">
+        <p class="q">Does it know my league's scoring?</p>
+        <div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar" style="width:75%"></div></div>
+      </div>
+      <div class="qa">
+        <p class="q">What does it get wrong?</p>
+        <div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar" style="width:50%"></div></div>
+      </div>
+      <div class="qa">
+        <p class="q">What does it cost?</p>
+        <div class="bars"><div class="bar"></div><div class="bar" style="width:40%"></div></div>
+      </div>
+      <div class="qa">
+        <p class="q">Can it see my team?</p>
+        <div class="bars"><div class="bar"></div><div class="bar"></div><div class="bar" style="width:65%"></div></div>
+      </div>
+      <div class="qa">
+        <p class="q">Who made this?</p>
+        <div class="bars"><div class="bar"></div><div class="bar" style="width:55%"></div></div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:12px;align-items:center">
+      <span class="note">Plain text answers — no accordions needed at this size</span>
+    </div>
+
+    <div style="border:1.5px solid #d9d7d1;background:#fff;border-radius:3px;padding:24px;text-align:center">
+      <h2 style="font-size:17px;font-weight:600;margin:0 0 8px">Still stuck?</h2>
+      <p style="font-size:13px;color:#94908a;margin:0 0 16px">Sends them to Contact — one route out of this page</p>
+      <span style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border:1.5px solid #33322e;border-radius:3px;font-size:14px;font-weight:600;background:#33322e;color:#fff">Ask a question</span>
+    </div>
+
+  </main>
+
+  <footer class="ft">
+    <div>Fantasy data provided by Yahoo Fantasy</div>
+    <div style="text-align:right">patrick@[DOMAIN]</div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

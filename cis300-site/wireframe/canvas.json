@@ -1,0 +1,29 @@
+{
+  "artboards": [
+    { "file": "Sitemap.dc.html", "title": "Site map (export this as PNG)", "x": 0, "y": 0, "w": 900, "h": 460 },
+    { "file": "Requirements.dc.html", "title": "Rubric map", "x": 1000, "y": 0, "w": 820, "h": 780 },
+    { "file": "Main.dc.html", "title": "Home (desktop)", "x": 0, "y": 900, "w": 1000, "h": 1500 },
+    { "file": "HomeMobile.dc.html", "title": "Home (phone)", "x": 1100, "y": 900, "w": 390, "h": 1250 },
+    { "file": "HowItDecides.dc.html", "title": "How It Decides", "x": 1600, "y": 900, "w": 1000, "h": 1260 },
+    { "file": "FAQ.dc.html", "title": "FAQ", "x": 2700, "y": 900, "w": 1000, "h": 960 },
+    { "file": "About.dc.html", "title": "About", "x": 3800, "y": 900, "w": 1000, "h": 1010 },
+    { "file": "Contact.dc.html", "title": "Contact", "x": 4900, "y": 900, "w": 1000, "h": 1010 }
+  ],
+  "annotations": [
+    {
+      "id": "scope",
+      "x": 0,
+      "y": -190,
+      "w": 640,
+      "text": "Low-fi on purpose: structure and hierarchy only. Grey bars are body copy still to be written. Type, colour and imagery come after you pick a palette."
+    },
+    {
+      "id": "sitemap-note",
+      "x": 700,
+      "y": -190,
+      "w": 420,
+      "text": "The site map is question 3 on the Planning Sheet. Export it from the toolbar (Export, PNG) and paste the image into the doc."
+    }
+  ],
+  "launch": { "view": "canvas" }
+}

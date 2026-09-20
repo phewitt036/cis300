@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Work+Sans:wght@400;500;600&display=swap">
+  <style>
+    body{margin:0;background:#faf9f7;color:#33322e;font-family:'Work Sans',system-ui,sans-serif}
+    a{color:#a35d09;text-decoration:none}a:hover{color:#7d4506}
+    .hd{display:flex;justify-content:space-between;align-items:center;padding:18px 34px;border-bottom:1.5px solid #d9d7d1;background:#fff}
+    .wm{font-weight:600;font-size:19px;letter-spacing:-.02em}
+    .nav{display:flex;gap:20px;font-size:13px;color:#6b6862}
+    .on{color:#33322e;font-weight:600;border-bottom:2px solid #a35d09;padding-bottom:2px}
+    .mn{padding:30px 34px;display:flex;flex-direction:column;gap:24px}
+    .sec{border:1.5px solid #d9d7d1;background:#fff;border-radius:3px;padding:22px}
+    .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#94908a;margin:0 0 12px;font-weight:600}
+    .tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#a35d09;background:#fdf6ea;border:1px dashed #e0b177;border-radius:3px;padding:3px 8px}
+    .note{font-family:'Caveat',cursive;font-size:18px;color:#a35d09;line-height:1.2}
+    .ft{border-top:1.5px solid #d9d7d1;padding:22px 34px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;font-size:12px;color:#6b6862;background:#fff}
+    .fl{font-size:12px;font-weight:600;color:#5c5952;margin:0 0 6px;display:block}
+    .fi{border:1.5px solid #c9c6be;border-radius:3px;background:#faf9f7;height:44px}
+    .fta{border:1.5px solid #c9c6be;border-radius:3px;background:#faf9f7;height:110px}
+  </style>
+</helmet>
+
+<div style="display:flex;flex-direction:column;min-height:100%">
+
+  <header class="hd">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:26px;height:26px;border:1.5px solid #33322e;border-radius:3px"></div>
+      <div class="wm">Bench Notes</div>
+    </div>
+    <nav class="nav">
+      <span>Home</span>
+      <span>How It Decides</span>
+      <span>FAQ</span>
+      <span>About</span>
+      <span class="on">Contact</span>
+    </nav>
+  </header>
+
+  <main class="mn" style="flex-grow:1">
+
+    <div>
+      <h1 style="font-size:30px;font-weight:600;margin:0 0 10px;letter-spacing:-.02em">Get in touch</h1>
+      <p style="font-size:15px;line-height:1.5;color:#5c5952;margin:0;max-width:60ch">Short intro line so the page is not just a form sitting on its own.</p>
+    </div>
+
+    <section class="sec">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+        <p class="lbl" style="margin:0">Feedback form</p>
+        <span class="tag">form — 4 fields, action="#"</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px">
+        <div>
+          <span class="fl">Name</span>
+          <div class="fi"></div>
+        </div>
+        <div>
+          <span class="fl">Email</span>
+          <div class="fi"></div>
+        </div>
+      </div>
+
+      <div style="height:18px"></div>
+
+      <div>
+        <span class="fl">Which platform is your league on?</span>
+        <div class="fi" style="display:flex;align-items:center;justify-content:space-between;padding:0 14px">
+          <span style="font-size:13px;color:#94908a">Select one</span>
+          <span style="width:0;height:0;border-top:6px solid #94908a;border-left:5px solid transparent;border-right:5px solid transparent"></span>
+        </div>
+      </div>
+
+      <div style="height:18px"></div>
+
+      <div>
+        <span class="fl">Message</span>
+        <div class="fta"></div>
+      </div>
+
+      <div style="height:20px"></div>
+
+      <div style="display:flex;align-items:center;gap:14px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 24px;border:1.5px solid #33322e;border-radius:3px;font-size:14px;font-weight:600;background:#33322e;color:#fff">Send</span>
+        <span class="note">No server side, so nothing happens on submit &mdash; that is allowed</span>
+      </div>
+    </section>
+
+    <section class="sec" style="display:flex;justify-content:space-between;align-items:center;gap:20px">
+      <div>
+        <h2 style="font-size:16px;font-weight:600;margin:0 0 6px">Rather just email?</h2>
+        <p style="font-size:13px;color:#5c5952;margin:0">patrick@[DOMAIN]</p>
+      </div>
+      <span class="tag">email link</span>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div>Fantasy data provided by Yahoo Fantasy</div>
+    <div style="text-align:right">patrick@[DOMAIN]</div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

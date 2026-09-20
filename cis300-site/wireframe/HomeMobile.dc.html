@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Work+Sans:wght@400;500;600&display=swap">
+  <style>
+    body{margin:0;background:#faf9f7;color:#33322e;font-family:'Work Sans',system-ui,sans-serif}
+    a{color:#a35d09;text-decoration:none}a:hover{color:#7d4506}
+    .hd{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1.5px solid #d9d7d1;background:#fff}
+    .wm{font-weight:600;font-size:17px;letter-spacing:-.02em}
+    .mn{padding:20px 18px;display:flex;flex-direction:column;gap:18px}
+    .sec{border:1.5px solid #d9d7d1;background:#fff;border-radius:3px;padding:18px}
+    .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#94908a;margin:0 0 10px;font-weight:600}
+    .bar{height:9px;border-radius:2px;background:#e8e6e1}
+    .bars{display:flex;flex-direction:column;gap:8px}
+    .tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#a35d09;background:#fdf6ea;border:1px dashed #e0b177;border-radius:3px;padding:3px 8px}
+    .note{font-family:'Caveat',cursive;font-size:17px;color:#a35d09;line-height:1.2}
+    .ft{border-top:1.5px solid #d9d7d1;padding:18px;display:flex;flex-direction:column;gap:8px;font-size:12px;color:#6b6862;background:#fff}
+    .imgph{border:1.5px dashed #c9c6be;border-radius:3px;background:#f2f0ec;display:flex;align-items:center;justify-content:center;color:#94908a;font-size:12px;text-align:center}
+    .btn{display:flex;align-items:center;justify-content:center;min-height:48px;border:1.5px solid #33322e;border-radius:3px;font-size:15px;font-weight:600;background:#33322e;color:#fff}
+    .btn2{display:flex;align-items:center;justify-content:center;min-height:48px;border:1.5px solid #b9b6ae;border-radius:3px;font-size:15px;font-weight:500;color:#4a4842}
+  </style>
+</helmet>
+
+<div style="display:flex;flex-direction:column;min-height:100%">
+
+  <header class="hd">
+    <div style="display:flex;align-items:center;gap:9px">
+      <div style="width:24px;height:24px;border:1.5px solid #33322e;border-radius:3px"></div>
+      <div class="wm">Bench Notes</div>
+    </div>
+    <div style="width:44px;height:44px;display:flex;flex-direction:column;justify-content:center;gap:5px;align-items:flex-end">
+      <div style="width:22px;height:2px;background:#33322e"></div>
+      <div style="width:22px;height:2px;background:#33322e"></div>
+      <div style="width:22px;height:2px;background:#33322e"></div>
+    </div>
+  </header>
+
+  <main class="mn" style="flex-grow:1">
+
+    <p class="note" style="margin:0">CP's view. Ten seconds, one thumb.</p>
+
+    <section>
+      <h1 style="font-size:29px;font-weight:600;line-height:1.12;margin:0 0 12px;letter-spacing:-.025em">Know who to start. And why.</h1>
+      <p style="font-size:15px;line-height:1.5;color:#5c5952;margin:0 0 18px">Scores your lineup against your league's real scoring settings, then explains the call.</p>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <span class="btn">See how it decides</span>
+        <span class="btn2">Open the tool</span>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <p class="lbl" style="margin:0">Demo</p>
+        <span class="tag">&lt;video&gt;</span>
+      </div>
+      <div class="imgph" style="height:170px">
+        <div style="width:0;height:0;border-left:20px solid #b9b6ae;border-top:13px solid transparent;border-bottom:13px solid transparent"></div>
+      </div>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:12px">
+      <div class="sec">
+        <h2 style="font-size:15px;font-weight:600;margin:0 0 8px">Set your lineup fast</h2>
+        <div class="bars"><div class="bar"></div><div class="bar" style="width:65%"></div></div>
+      </div>
+      <div class="sec">
+        <h2 style="font-size:15px;font-weight:600;margin:0 0 8px">See the reasoning</h2>
+        <div class="bars"><div class="bar"></div><div class="bar" style="width:55%"></div></div>
+      </div>
+      <div class="sec">
+        <h2 style="font-size:15px;font-weight:600;margin:0 0 8px">Uses your league's rules</h2>
+        <div class="bars"><div class="bar"></div><div class="bar" style="width:75%"></div></div>
+      </div>
+    </section>
+
+    <section class="sec" style="text-align:center">
+      <span class="btn" style="width:100%">See how it decides</span>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div>Fantasy data provided by Yahoo Fantasy</div>
+    <div>patrick@[DOMAIN]</div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

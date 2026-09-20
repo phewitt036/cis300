@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAEAEA;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper {
+    background-color: #90C7E3;
+    background-image: linear-gradient(#FFFFFF, #90C7E3);
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #002171;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #FFFFFF;
+}
+
+header a:visited {
+    color: #FFFFFF;
+}
+
+header a:hover {
+    color: #90C7E3;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.25em;
+}
+
+nav {
+    font-weight: bold;
+    padding: 0;
+    font-size: 120%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+nav li {
+    border-bottom: 1px solid #000033;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #5C7FA3;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #A52A2A;
+}
+
+main {
+    background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: block;
+    overflow: auto;
+}
+
+h2 {
+    color: #1976D2;
+    font-family: Georgia, "Times New Roman", serif;
+    text-shadow: 1px 1px #CCCCCC;
+}
+
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+dt {
+    color: #002171;
+}
+
+main ul {
+    list-style-image: url(marker.gif);
+}
+
+footer {
+    background-color: #FFFFFF;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 2em;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(coast2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url(yurt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(trail.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.resort {
+    color: #1976D2;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    section {
+        margin-left: 2em;
+        margin-right: 2em;
+        flex: 1;
+    }
+
+    .flow {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid #000033;
+        box-shadow: 3px 3px 3px #000033;
+    }
+
+    nav {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    @supports (display: grid) {
+        nav ul {
+            flex-direction: column;
+            padding-top: 1em;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        .hero {
+            grid-area: hero;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template: "header header"
+                           "nav    hero"
+                           "nav    main"
+                           "footer footer"
+                           / 200px auto;
+        }
+    }
+}

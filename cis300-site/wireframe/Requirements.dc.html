@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Work+Sans:wght@400;500;600&display=swap">
+  <style>
+    body{margin:0;background:#faf9f7;color:#33322e;font-family:'Work Sans',system-ui,sans-serif}
+    a{color:#a35d09;text-decoration:none}a:hover{color:#7d4506}
+    .wrap{padding:26px 28px}
+    h1{font-size:22px;font-weight:600;margin:0 0 6px;letter-spacing:-.02em}
+    .sub{font-size:13px;color:#6b6862;margin:0 0 20px}
+    table{border-collapse:collapse;width:100%;font-size:12.5px;background:#fff}
+    th,td{border:1.5px solid #d9d7d1;padding:9px 12px;text-align:left;vertical-align:top}
+    th{background:#f2f0ec;font-weight:600;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:#5c5952}
+    td{color:#4a4842;line-height:1.4}
+    .pg{font-weight:600;color:#33322e;white-space:nowrap}
+    .note{font-family:'Caveat',cursive;font-size:17px;color:#a35d09;line-height:1.25;margin:18px 0 0}
+  </style>
+</helmet>
+
+<div class="wrap">
+  <h1>Rubric map</h1>
+  <p class="sub">Every required element from the project instructions, and the page it lives on.</p>
+
+  <table>
+    <tr>
+      <th style="width:38%">Requirement</th>
+      <th style="width:26%">Lands on</th>
+      <th style="width:36%">Note</th>
+    </tr>
+    <tr><td>Home page + 3&ndash;5 content pages</td><td class="pg">All five</td><td>Home, How It Decides, FAQ, About, Contact &mdash; four content pages, inside the limit</td></tr>
+    <tr><td>HEADER, NAV, MAIN, FOOTER tags</td><td class="pg">Every page</td><td>Same header and footer markup throughout</td></tr>
+    <tr><td>Page title + meta tags</td><td class="pg">Every page</td><td>Distinct title and description per page</td></tr>
+    <tr><td>Table &mdash; 3 columns, header row, 3+ data rows</td><td class="pg">How It Decides</td><td>Gut feel vs. what the tool weighs; 4 data rows</td></tr>
+    <tr><td>One &lt;video&gt; tag</td><td class="pg">Home</td><td>15-second screen capture, self-recorded, small file</td></tr>
+    <tr><td>Form, 4+ fields, action="#"</td><td class="pg">Contact</td><td>Name, email, platform, message. No mailto: in the action</td></tr>
+    <tr><td>Email link</td><td class="pg">Contact + footer</td><td>Live on every page via the footer</td></tr>
+    <tr><td>External link</td><td class="pg">Footer</td><td>Yahoo Fantasy &mdash; doubles as the attribution Yahoo's API agreement requires</td></tr>
+    <tr><td>External stylesheet, 5+ selectors, 15+ properties</td><td class="pg">One file, all pages</td><td>Comfortably exceeded by the shared header, nav, cards and footer</td></tr>
+    <tr><td>Text and images with real value on every page</td><td class="pg">All five</td><td>No page is only a table, an image or a video</td></tr>
+  </table>
+
+  <p class="note">Two things still to make: the 15-second clip, and the images. Everything else is layout.</p>
+</div>
+</x-dc>
+</body>
+</html>
