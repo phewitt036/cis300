@@ -140,6 +140,38 @@ footer {
     color: #1976D2;
 }
 
+table {
+    border: 2px solid #3399CC;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5em;
+    border: 2px solid #3399CC;
+}
+
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #F5FAFC;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+input, textarea {
+    margin-bottom: 0.5em;
+}
+
 @media (min-width: 600px) {
     nav ul {
         display: flex;
@@ -160,6 +192,19 @@ footer {
     .flow {
         display: flex;
         flex-direction: row;
+    }
+
+    form {
+        width: 60%;
+        max-width: 30em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
+
+    input[type="submit"] {
+        grid-column: 2;
+        width: 9em;
     }
 }
 

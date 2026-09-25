@@ -1,0 +1,251 @@
+/* Bench Notes - external style sheet
+   Patrick Hewitt - CIS 300 Project Assignment
+   Colors are declared once in :root and referenced with var() everywhere else,
+   so the whole palette can be changed from one place. */
+
+:root {
+  --paper: #faf9f7;
+  --card: #ffffff;
+  --ink: #33322e;
+  --muted: #5c5952;
+  --line: #d9d7d1;
+  --accent: #a35d09;
+  --accent-dark: #7d4506;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 18px 34px;
+  background-color: var(--card);
+  border-bottom: 2px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wordmark {
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  color: var(--muted);
+  font-size: 0.85em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+nav a.current {
+  color: var(--ink);
+  font-weight: bold;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 34px 50px 34px;
+}
+
+section {
+  margin-bottom: 34px;
+}
+
+h1 {
+  font-size: 2.4em;
+  line-height: 1.1;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin: 0 0 10px 0;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 0 0 8px 0;
+}
+
+p {
+  margin: 0 0 16px 0;
+}
+
+.lead {
+  font-size: 1.05em;
+  color: var(--muted);
+  max-width: 55ch;
+}
+
+.hero,
+.clip,
+.method,
+.closing,
+.card {
+  background-color: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 3px;
+  padding: 26px;
+}
+
+.button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 12px 22px;
+  background-color: var(--ink);
+  color: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.button.secondary {
+  background-color: var(--card);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+video {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  border: 2px solid var(--line);
+  border-radius: 3px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.8em;
+  color: var(--muted);
+  padding-top: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.method img {
+  flex-shrink: 0;
+  border: 2px dashed var(--line);
+  border-radius: 3px;
+  background-color: var(--paper);
+}
+
+.method ul {
+  margin: 0 0 16px 0;
+  padding-left: 22px;
+}
+
+.method li {
+  margin-bottom: 6px;
+}
+
+.closing {
+  text-align: center;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+footer {
+  background-color: var(--card);
+  border-top: 2px solid var(--line);
+  padding: 26px 34px;
+  font-size: 0.8em;
+  color: var(--muted);
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 26px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+footer h3 {
+  color: var(--ink);
+  font-size: 0.95em;
+  margin: 0 0 8px 0;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.copyright {
+  max-width: 1100px;
+  margin: 20px auto 0 auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+@media screen and (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .method {
+    display: block;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+}
