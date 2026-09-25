@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Why Bench Notes exists and how it was built: a start/sit advisor for an eight-team PPR league, and the website that explains it.">
+  <meta name="keywords" content="Bench Notes, about, fantasy football, Patrick Hewitt, CIS 300">
+  <meta name="author" content="Patrick Hewitt">
+  <title>About &mdash; Bench Notes</title>
+  <link rel="stylesheet" href="bench-notes.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="Bench Notes logo" width="34" height="34">
+      <span class="wordmark">Bench Notes</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-decides.html">How It Decides</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html" class="current">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero split">
+      <img src="images/logo.svg" alt="Bench Notes clipboard logo" width="140" height="140">
+      <div>
+        <h1>Why this exists</h1>
+        <p class="lead">I built Bench Notes for my own fantasy league. The hard part turned out
+          not to be writing the advisor &mdash; it was getting seven other people to trust
+          it.</p>
+        <p>A tool that just says &ldquo;start him&rdquo; is easy to ignore. So this site explains
+          what the advisor looks at, where its data comes from, and what it does not know.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>How it was built</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>The data</h3>
+          <p>League settings and rosters come from Yahoo's Fantasy API, through a developer app
+            registered under the Bench Notes name. Projections and injury status come from
+            Sleeper, and headlines from RotoWire and ESPN's public feeds.</p>
+        </article>
+        <article class="card">
+          <h3>The scoring</h3>
+          <p>Written in Python. It re-scores every projection with our league's exact rules,
+            has an AI model rate the news, and gives the start to the best score at each
+            position. It runs on a schedule on a small server in my home.</p>
+        </article>
+        <article class="card">
+          <h3>This site</h3>
+          <p>Hand-written HTML and one CSS file for CIS 300 at Arizona State University, with no
+            frameworks or templates. It is the front door that explains the tool to people who
+            will never read its code.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>The league it was built for</h2>
+      <div class="stats">
+        <p><span class="stat-number">8</span> teams</p>
+        <p><span class="stat-number">PPR</span> scoring</p>
+        <p><span class="stat-number">14</span> rounds</p>
+        <p><span class="stat-number">1</span> of us writes software</p>
+      </div>
+      <p>That last number is the whole reason this site has to explain itself.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-cols">
+      <div>
+        <h3>Site links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-it-decides.html">How It Decides</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Data source</h3>
+        <p><a href="https://football.fantasysports.yahoo.com">Fantasy data provided by Yahoo Fantasy</a></p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="mailto:phewitt036@gmail.com">phewitt036@gmail.com</a></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Bench Notes. Built by Patrick Hewitt for CIS 300.</p>
+  </footer>
+
+</body>
+</html>

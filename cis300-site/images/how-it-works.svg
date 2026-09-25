@@ -15,7 +15,7 @@
   <text class="sm" x="24" y="48">PPR, roster slots</text>
   <rect class="bx" x="12" y="76" width="120" height="44" rx="3"/>
   <text class="lb" x="24" y="96">Player data</text>
-  <text class="sm" x="24" y="110">Usage, matchup</text>
+  <text class="sm" x="24" y="110">Projections, news</text>
   <line class="ar" x1="134" y1="36" x2="184" y2="82"/>
   <line class="ar" x1="134" y1="98" x2="184" y2="98"/>
   <rect class="bx" x="188" y="76" width="118" height="44" rx="3"/>

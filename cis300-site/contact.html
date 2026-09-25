@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Send feedback or a question about Bench Notes, the fantasy football start/sit advisor.">
+  <meta name="keywords" content="Bench Notes, contact, feedback, fantasy football">
+  <meta name="author" content="Patrick Hewitt">
+  <title>Contact &mdash; Bench Notes</title>
+  <link rel="stylesheet" href="bench-notes.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="Bench Notes logo" width="34" height="34">
+      <span class="wordmark">Bench Notes</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-decides.html">How It Decides</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="current">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Get in touch</h1>
+      <p class="lead">A call you disagreed with, a feature you want, or a league that does
+        something strange with its scoring &mdash; send it over.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Feedback form</h2>
+      <form action="#" method="get">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="platform">Which platform is your league on?</label>
+        <select id="platform" name="platform">
+          <option value="">Select one</option>
+          <option value="yahoo">Yahoo</option>
+          <option value="espn">ESPN</option>
+          <option value="sleeper">Sleeper</option>
+          <option value="nfl">NFL Fantasy</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="button">Send</button>
+      </form>
+      <p class="form-note">This form is part of a class project and does not send anything yet.
+        For now, email is the surest way to reach me.</p>
+    </section>
+
+    <section class="closing">
+      <h2>Rather just email?</h2>
+      <p><a href="mailto:phewitt036@gmail.com">phewitt036@gmail.com</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-cols">
+      <div>
+        <h3>Site links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-it-decides.html">How It Decides</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Data source</h3>
+        <p><a href="https://football.fantasysports.yahoo.com">Fantasy data provided by Yahoo Fantasy</a></p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="mailto:phewitt036@gmail.com">phewitt036@gmail.com</a></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Bench Notes. Built by Patrick Hewitt for CIS 300.</p>
+  </footer>
+
+</body>
+</html>

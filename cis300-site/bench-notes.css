@@ -113,6 +113,7 @@ p {
 .clip,
 .method,
 .closing,
+.panel,
 .card {
   background-color: var(--card);
   border: 2px solid var(--line);
@@ -168,7 +169,8 @@ figcaption {
   gap: 16px;
 }
 
-.method {
+.method,
+.split {
   display: flex;
   align-items: center;
   gap: 26px;
@@ -238,11 +240,125 @@ footer ul {
   border-top: 1px solid var(--line);
 }
 
+/* ---- Content pages ---- */
+
+.panel ol,
+.panel ul {
+  padding-left: 22px;
+}
+
+.panel li {
+  margin-bottom: 8px;
+}
+
+.steps {
+  margin-bottom: 16px;
+}
+
+.steps img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+caption {
+  text-align: left;
+  font-size: 0.85em;
+  color: var(--muted);
+  padding-bottom: 8px;
+}
+
+th,
+td {
+  border: 2px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--paper);
+}
+
+.faq-list {
+  margin-bottom: 34px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.faq-list h2 {
+  font-size: 1.05em;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 18px;
+  padding: 10px;
+  border: 2px solid var(--line);
+  border-radius: 3px;
+  background-color: var(--paper);
+  font-family: inherit;
+  font-size: 1em;
+}
+
+button.button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.form-note {
+  margin-top: 16px;
+  font-size: 0.8em;
+  color: var(--muted);
+}
+
 @media screen and (max-width: 700px) {
-  .cards {
+  .cards,
+  .faq-list {
     grid-template-columns: 1fr;
   }
-  .method {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .method,
+  .split {
     display: block;
   }
   h1 {
