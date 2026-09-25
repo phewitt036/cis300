@@ -37,6 +37,12 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand:hover {
+  color: var(--accent);
 }
 
 .wordmark {
