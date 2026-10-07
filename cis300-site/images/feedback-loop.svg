@@ -24,7 +24,7 @@
   <line class="ar" x1="412" y1="60" x2="450" y2="60"/>
   <rect class="bx" x="454" y="10" width="176" height="100" rx="3" fill="#faf9f7"/>
   <text class="st" x="470" y="36">RESULT</text>
-  <text class="lb" x="470" y="60">Something improves</text>
+  <text class="lb" x="470" y="60">Things improve</text>
   <text class="sm" x="470" y="86">The site, the tool,</text>
   <text class="sm" x="470" y="101">or this FAQ</text>
   <path class="ar" d="M542,114 L542,150 L98,150 L98,116"/>
