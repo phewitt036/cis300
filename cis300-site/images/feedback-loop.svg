@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 190" width="640" height="190" role="img" aria-label="Diagram: you send feedback, I read every message, then the site or the tool gets fixed, and common questions are added to the FAQ">
+  <style>
+    .bx{fill:#ffffff;stroke:#33322e;stroke-width:2}
+    .st{font:bold 10px Verdana,sans-serif;fill:#a35d09;letter-spacing:1px}
+    .lb{font:bold 14px Verdana,sans-serif;fill:#33322e}
+    .sm{font:11px Verdana,sans-serif;fill:#5c5952}
+    .ar{stroke:#a35d09;stroke-width:2;fill:none;marker-end:url(#a)}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a35d09"/>
+    </marker>
+  </defs>
+  <rect class="bx" x="10" y="10" width="176" height="100" rx="3"/>
+  <text class="st" x="26" y="36">YOU</text>
+  <text class="lb" x="26" y="60">Send feedback</text>
+  <text class="sm" x="26" y="86">A call, a question,</text>
+  <text class="sm" x="26" y="101">or an idea</text>
+  <line class="ar" x1="190" y1="60" x2="228" y2="60"/>
+  <rect class="bx" x="232" y="10" width="176" height="100" rx="3"/>
+  <text class="st" x="248" y="36">ME</text>
+  <text class="lb" x="248" y="60">Read every one</text>
+  <text class="sm" x="248" y="86">and reply by email</text>
+  <line class="ar" x1="412" y1="60" x2="450" y2="60"/>
+  <rect class="bx" x="454" y="10" width="176" height="100" rx="3" fill="#faf9f7"/>
+  <text class="st" x="470" y="36">RESULT</text>
+  <text class="lb" x="470" y="60">Something improves</text>
+  <text class="sm" x="470" y="86">The site, the tool,</text>
+  <text class="sm" x="470" y="101">or this FAQ</text>
+  <path class="ar" d="M542,114 L542,150 L98,150 L98,116"/>
+  <text class="sm" x="320" y="174" text-anchor="middle">Common questions end up on the FAQ page</text>
+</svg>

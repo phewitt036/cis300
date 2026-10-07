@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 210" width="640" height="210" role="img" aria-label="Diagram: Yahoo Fantasy, Sleeper, and RotoWire and ESPN news all feed Bench Notes, which produces a start or sit call with a reason">
+  <style>
+    .bx{fill:#ffffff;stroke:#33322e;stroke-width:2}
+    .lb{font:bold 13px Verdana,sans-serif;fill:#33322e}
+    .sm{font:11px Verdana,sans-serif;fill:#5c5952}
+    .ar{stroke:#a35d09;stroke-width:2;fill:none;marker-end:url(#a)}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a35d09"/>
+    </marker>
+  </defs>
+  <rect class="bx" x="10" y="10" width="200" height="54" rx="3"/>
+  <text class="lb" x="24" y="33">Yahoo Fantasy</text>
+  <text class="sm" x="24" y="51">League rules and rosters</text>
+  <rect class="bx" x="10" y="78" width="200" height="54" rx="3"/>
+  <text class="lb" x="24" y="101">Sleeper</text>
+  <text class="sm" x="24" y="119">Projections, injury status</text>
+  <rect class="bx" x="10" y="146" width="200" height="54" rx="3"/>
+  <text class="lb" x="24" y="169">RotoWire and ESPN</text>
+  <text class="sm" x="24" y="187">Free public news feeds</text>
+  <line class="ar" x1="214" y1="37" x2="290" y2="92"/>
+  <line class="ar" x1="214" y1="105" x2="290" y2="105"/>
+  <line class="ar" x1="214" y1="173" x2="290" y2="118"/>
+  <rect class="bx" x="294" y="72" width="140" height="66" rx="3"/>
+  <text class="lb" x="364" y="101" text-anchor="middle">Bench Notes</text>
+  <text class="sm" x="364" y="119" text-anchor="middle">Scores every player</text>
+  <line class="ar" x1="438" y1="105" x2="476" y2="105"/>
+  <rect class="bx" x="480" y="72" width="150" height="66" rx="3" fill="#faf9f7"/>
+  <text class="lb" x="555" y="101" text-anchor="middle">Start or sit</text>
+  <text class="sm" x="555" y="119" text-anchor="middle">plus the reason</text>
+</svg>
